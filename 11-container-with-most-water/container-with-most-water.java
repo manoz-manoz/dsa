@@ -2,7 +2,7 @@ import java.util.*;
 class Solution {
     static {
     Solution sol = new Solution();
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 10; i++) {
         sol.maxArea(new int[]{0, 0});
     }
 }
@@ -16,13 +16,8 @@ class Solution {
             int area=0;
             area=(j-i)*Math.min(height[i],height[j]);
             maxarea=Math.max(area,maxarea);
-            if(height[i]<=height[j])
-            {
-                    i++;
-            }
-            else
-            j--;
-
+            if(height[i]<=height[j]) i++;
+            else    j--;
         }
         return maxarea;
         
