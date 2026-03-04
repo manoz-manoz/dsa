@@ -5,6 +5,7 @@ class Solution {
         ArrayList<Integer> list=new ArrayList<>();
         for(Integer i:arr)
             list.add(i);
+
             int i=0;
             int j=arr.length-1;
             while(i<j)
